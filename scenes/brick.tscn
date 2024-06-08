@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0rf0sksftr26"]
+
+[ext_resource type="Texture2D" uid="uid://b6csmn1nrihca" path="res://assets/sh_2.png" id="1_irnvp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ao50"]
+size = Vector2(66, 26)
+
+[node name="Brick" type="Area2D"]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_irnvp")
+region_enabled = true
+region_rect = Rect2(5, 70, 67, 27)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6ao50")
